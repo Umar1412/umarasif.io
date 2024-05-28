@@ -1,0 +1,344 @@
+
+* {
+    margin: 0; /* Resetting */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif; /* custom google font */ 
+    cursor: crosshair; /* Adding a crosshair cursor to match the theme of call of duty */
+}
+
+/* Styles for the Header */ 
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 7, 7, 0.767), rgba(8, 8, 8, 0.712)), url('codbackground.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Styles for Nav */
+
+nav {
+    background-color: rgb(0, 0, 0); /* Nav Background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px; 
+}
+
+/* width of the call of duty logo */ 
+
+nav img {
+    width: 120px;
+}
+
+.navigation-bar {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+    margin-left: 30px; /* Space between page names in nav */
+}
+
+.navigation-bar ul li:first-child {
+    margin-left: 0; 
+}
+
+.navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation-bar ul li:hover {
+    background-color: #6d0000;
+}
+
+/* Download text styles */
+
+.download-text{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* Style for the Purchase Button */ 
+
+.purchase-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #6d0000;
+    padding: 12px 30px;
+    font-size: 15px;
+    background: black;
+    position: relative;
+    cursor: crosshair;
+}
+
+/* Hover effect for the button */
+
+.purchase-button:hover{
+    border: 4px solid #6d0000;
+    background:#6d0000;
+    transition: 1s;
+
+}
+
+/* Styles for Overview */
+
+.overview {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.codclip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; 
+}
+
+.overview::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(29, 29, 29, 0.7), rgba(13, 13, 13, 0.7));
+    z-index: 0; 
+}
+
+.codi {
+    position: relative;
+    z-index: 2; 
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.codclip{
+    opacity: 50%;
+}
+
+.write{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.codinfo {
+    font-size: 22px; 
+    font-family: "Oswald", sans-serif; 
+    text-align: left; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+}
+
+
+
+.codd img {
+    float: right; /* Align image to the right */
+    margin-left: 18px; 
+}
+
+/* Styling the games section */
+
+.cod-games {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+    url(codbackground2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cod-games-wrapper{
+    width: 70%;
+    margin: auto;
+
+}
+
+.cod-games h1{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 450;
+}
+
+.cod-games-img{
+    display: flex;
+}
+
+/* Adding all images and styling for all the games */
+
+.cod-games-img .img{
+width: 100px;
+height: 130px;
+background: url(codmw3game.jpg);
+background-size: cover;
+background-position: center;
+margin-right: 10px;
+border-radius: 10px;
+
+}
+
+.cod-games-img .img-2{
+background: url(mw2.jpg);
+background-size: cover;
+background-position: center;
+
+}
+
+.cod-games-img .img-3{
+background: url(vanguard.jpg);
+background-size: cover;
+background-position: center;
+    
+}
+
+.cod-games-img .img-4{
+background: url(coldwar.jpg);
+background-size: cover;
+background-position: center;
+        
+}
+
+.cod-games-img .img-5{
+background: url(modernwarfare.jpg);
+background-size: cover;
+background-position: center;
+            
+}
+
+.cod-games-img .img-6{
+background: url(bo4.jpg);
+background-size: cover;
+background-position: center;
+                
+}
+
+.cod-games-img .img-7{
+    background: url(bo3.jpg);
+    background-size: cover;
+    background-position: center;
+                    
+    }
+
+    .cod-games-img .img-8{
+        background: url(warzone.webp);
+        background-size: cover;
+        background-position: center;
+                        
+        }
+
+        .cod-games-img .img-9{
+            background: url(codmobile.png);
+            background-size: cover;
+            background-position: center;
+                            
+            }
+        
+/* Hover effect for the games */
+
+.img:hover{
+border: 4px solid #6d0000;
+}
+
+/* Styles for the footer section */
+
+footer{
+    background-color: black;
+    
+}
+
+.footerc{
+width: 100%;
+padding: 60px 25px 15px;
+
+
+}
+
+.socialmedia{
+display: flex;
+justify-content: center;
+
+}
+
+.socialmedia a{
+    text-decoration: none;
+    padding: 10px; 
+    background-color:white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialmedia a i{
+    font-size: 2em;
+    color:#090a0a;
+    opacity: 0.9;
+}
+
+.socialmedia a:hover{
+    background-color:#090a0a;
+    transition: 0.5s;
+}
+
+.socialmedia a:hover i{
+    color:#6d0000;
+    transition: 0.4s;
+}
+
+/* Footer Navigation Styles */
+
+.fnav{
+margin: 20px 0;
+}
+
+.fnav ul{
+display: flex;
+justify-content: center;
+}
+
+.fnav ul li a{
+color:white;
+margin: 20px;
+font-size: 1.3em;
+text-decoration: none;
+transition: 0.4;
+}
+
+.copyright{
+background-color: black;
+padding: 30px;
+text-align: center;
+
+}
+
+.copyright p{
+color: #6d0000;
+
+}
+                
+                
