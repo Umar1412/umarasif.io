@@ -1,0 +1,235 @@
+* {
+    margin: 0; /* Resetting */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif; /* custom google font */ 
+    cursor: crosshair; /* Adding a crosshair cursor to match the theme of call of duty */
+}
+
+/* Styles for the Header */ 
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 7, 7, 0.767), rgba(8, 8, 8, 0.712)), url('codbackground.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Styles for Nav */
+
+nav {
+    background-color: rgb(0, 0, 0); /* Nav Background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px; 
+}
+
+/* width of the call of duty logo */ 
+
+nav img {
+    width: 120px;
+}
+
+.navigation-bar {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+    margin-left: 30px; /* Space between page names in nav */
+}
+
+.navigation-bar ul li:first-child {
+    margin-left: 0; 
+}
+
+.navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation-bar ul li:hover {
+    background-color: #6d0000;
+}
+
+/* background image styling for reviews section */
+
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgba(13, 13, 13, 0.767), rgba(8, 8, 8, 0.712)),url(reviewsbg.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Heading section for reviews */
+
+section .h{
+    display: inline-block;
+    position: relative;
+    color: #6d0000;
+    font-size: 3vw; /* Heading Font Size */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    z-index: 1; 
+}
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Styling each review */ 
+
+.wrapper .review{
+    position: relative;
+    width: 450px;
+    color: white;
+    background: black; 
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.wrapper .review .useri{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); 
+    top: -10%;
+    width: 100%;
+    display: block;
+}
+
+/* Styling user image */ 
+
+.wrapper .review .useri .imgg {
+    width: 100px; /* Width and Height I went with */
+    height: 100px; 
+    border-radius: 10px; /* Adding a round effect */
+}
+
+.wrapper .review .useri .imgg img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.wrapper .review .useri h2{
+    padding: 5px 0;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+
+/* Styling review paragraph text */ 
+
+.wrapper .review p{
+    margin-top: 50px;
+    color: white;
+    padding: 0 6px;
+    font-size: 17px; 
+    opacity: 0.7; 
+}
+
+.wrapper .review .right{
+    font-size: 40px;
+    display: block;
+    text-align: right;
+    color: #6d0000
+}
+
+
+/* Styles for the footer section */
+
+footer{
+    background-color: black;
+    
+}
+
+.footerc{
+width: 100%;
+padding: 60px 25px 15px;
+
+
+}
+
+.socialmedia{
+display: flex;
+justify-content: center;
+
+}
+
+.socialmedia a{
+    text-decoration: none;
+    padding: 10px; 
+    background-color:white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialmedia a i{
+    font-size: 2em;
+    color:#090a0a;
+    opacity: 0.9;
+}
+
+.socialmedia a:hover{
+    background-color:#090a0a;
+    transition: 0.5s;
+}
+
+.socialmedia a:hover i{
+    color:#6d0000;
+    transition: 0.4s;
+}
+
+/* Footer Navigation Styles */
+
+.fnav{
+margin: 20px 0;
+}
+
+.fnav ul{
+display: flex;
+justify-content: center;
+}
+
+.fnav ul li a{
+color:white;
+margin: 20px;
+font-size: 1.3em;
+text-decoration: none;
+transition: 0.4;
+}
+
+.copyright{
+background-color: black;
+padding: 30px;
+text-align: center;
+
+}
+
+.copyright p{
+color: #6d0000;
+
+}
