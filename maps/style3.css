@@ -1,0 +1,210 @@
+* {
+    margin: 0; /* Resetting */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif; /* custom google font */ 
+    cursor: crosshair; /* Adding a crosshair cursor to match the theme of call of duty */
+}
+
+/* Styles for the Header */ 
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 7, 7, 0.767), rgba(8, 8, 8, 0.712)), url('codbackground.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Styles for Nav */
+
+nav {
+    background-color: rgb(0, 0, 0); /* Nav Background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px; 
+}
+
+/* width of the call of duty logo */ 
+
+nav img {
+    width: 120px;
+}
+
+.navigation-bar {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+    margin-left: 30px; /* Space between page names in nav */
+}
+
+.navigation-bar ul li:first-child {
+    margin-left: 0; 
+}
+
+.navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation-bar ul li:hover {
+    background-color: #6d0000;
+}
+
+/* Styling for maps image */
+
+.maps {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+    url(nuketown.png);
+}
+
+.mapi {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 60px;
+}
+
+/* Using the same style used for map 1 for the remaining maps */ 
+
+.map2 {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+    url(raid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map3 {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+    url(rust.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map4 {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+    url(shipment.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map5 {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+    url(breach.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map6 {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+    url(fringe.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Styles for the footer section */
+
+footer{
+    background-color: black;
+    
+}
+
+.footerc{
+width: 100%;
+padding: 60px 25px 15px;
+
+
+}
+
+.socialmedia{
+display: flex;
+justify-content: center;
+
+}
+
+.socialmedia a{
+    text-decoration: none;
+    padding: 10px; 
+    background-color:white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialmedia a i{
+    font-size: 2em;
+    color:#090a0a;
+    opacity: 0.9;
+}
+
+.socialmedia a:hover{
+    background-color:#090a0a;
+    transition: 0.5s;
+}
+
+.socialmedia a:hover i{
+    color:#6d0000;
+    transition: 0.4s;
+}
+
+/* Footer Navigation Styles */
+
+.fnav{
+margin: 20px 0;
+}
+
+.fnav ul{
+display: flex;
+justify-content: center;
+}
+
+.fnav ul li a{
+color:white;
+margin: 20px;
+font-size: 1.3em;
+text-decoration: none;
+transition: 0.4;
+}
+
+.copyright{
+background-color: black;
+padding: 30px;
+text-align: center;
+
+}
+
+.copyright p{
+color: #6d0000;
+
+}
